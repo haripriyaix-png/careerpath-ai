@@ -1,4 +1,4 @@
-const API="http://127.0.0.1:5000/api";
+const API="https://careerpath-ai-dgfb.onrender.com/api";
 async function request(path,options={}){
   const r=await fetch(`${API}${path}`,{headers:{"Content-Type":"application/json"},...options});
   if(!r.ok) throw new Error(`API error ${r.status}`);
